@@ -16,7 +16,9 @@
             color: white;
             font-size: 25px;
             font-family: Arial, Helvetica, sans-serif"
+
         }
+
         .box-1 {
             padding-top: 50px;
         }
@@ -55,36 +57,45 @@
 
             <br>
             <div class="box-1">
-            <form name="myForm" onsubmit="return validateForm()" method="post">
-                <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Email address</label>
-                    <input type="text" name="fname" id="exampleInputEmail1" aria-describedby="emailHelp">
-                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                </div>
-                <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Password</label>
-                    <input type="text" name="fname" id="exampleInputEmail1" aria-describedby="emailHelp">
-                </div>
+                <form name="myForm" onsubmit="return validateForm()" method="post">
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email:</label><br>
+                        <input type="text" name="fname" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Password:</label><br>
+                        <input type="password" name="pname" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
 
-                <div class="mb-3 form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                </div>
-                <input type="submit" value="Submit"  class="btn btn-primary"></input>
-            </form>
-        </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div>
+                    <input type="submit" value="Submit" class="btn btn-primary"></input>
+                </form>
+            </div>
 
             <script>
-                    function validateForm() {
-                        let x = document.forms["myForm"]["fname"].value;
-                    if (x == "") {
-                        alert("Name and Password must be filled out ");
-                        
+                function validateForm() {
+                    let x = document.forms["myForm"]["fname"].value;
+                    if ( /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(x)) {
+                        alert("Valid email address!");
+                        document.form1.text1.focus();
+                    } else {
+                        alert("Invalid email address!");
+                        document.form1.text1.focus();
+                    
+                    }
                     return false;
-  }
-}
+
+                }
+
+            
+                    
+                
+                
             </script>
-           
+
         </div>
     </div>
 

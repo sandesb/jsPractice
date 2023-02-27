@@ -5,17 +5,38 @@ body{
     background-color: rgb(162, 161, 220);
 }
 
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) { }
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+#text{
+    width: 200px;
+}
+ }
 
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) { }
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    #text{
+        width:200px;
+    }
+ }
 
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) { }
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    #text{
+        width:300px;
+    }
+ }
 
-// X-Large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { }
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    #text{
+        width:300px;
+    }
+ }
 
-// XX-Large devices (larger desktops, 1400px and up)
-@media (min-width: 1400px) { }
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+    #text{
+             width:500px;
+
+    }
+ }
